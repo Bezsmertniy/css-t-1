@@ -1,7 +1,61 @@
-html {
-  max-width: 720px;
+/* .card > p {
+  color: hsla(141, 69%, 35%, 0.84);
+} */
+
+p {
 }
 
-body {
-  background: #fff;
+.card > p {
+  color: green;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 1px blue;
+}
+p:focus,
+p:active,
+p:hover {
+  -webkit-text-fill-color: rgb(246, 255, 0);
+  -webkit-text-stroke: 1px rgb(255, 0, 204);
+  direction: rtl;
+}
+
+#test {
+  color: unset;
+  -webkit-text-fill-color: unset;
+  -webkit-text-stroke: 1px unset;
+
+  /* writing-mode: vertical-rl; */
+  text-align: justify;
+
+  letter-spacing: 0.1em;
+}
+pre {
+  tab-size: 5;
+}
+span {
+  text-align: left;
+  text-transform: uppercase;
+
+  text-decoration: underline dotted red;
+}
+
+* {
+  font-family: cursive;
+  font-size: 16px;
+  font-display: swap;
+}
+span {
+  font-size: xx-small;
+  font-weight: 900;
+}
+.test {
+  display: none;
+}
+.block {
+  display: block;
+  background: rgb(219, 215, 215);
+  margin: auto;
+  min-width: min-content;
+  max-width: 600px;
+  min-height: 100px;
+  max-height: max-content;
 }
