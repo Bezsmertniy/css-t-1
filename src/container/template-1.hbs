@@ -1,20 +1,17 @@
 <div class="page">
 	<div class="page_content">
 		<div class="page_block">
-			<header class="heder row g-0">
+			<header class="header row g-0">
 				<div class="col-3">
 					{{> logo}}
 				</div>
-
 
 				<nav class="header_nav col-9">
 					<div class="header_nav_right">
 						{{> nav list=header}}
 					</div>
-
 				</nav>
 			</header>
-			{{> divider}}
 		</div>
 
 		<div class="page_block">
@@ -32,14 +29,12 @@
 		</div>
 
 		<div class="page_block">
-			{{> divider}}
-			<footer class="row footer">
+			<footer class="row g-0 footer">
 				<div class="col-3">
 					{{> logo}}
 
 					<span class="footer_copyright">Copyright 2023-2024</span>
 				</div>
-
 				{{#each footer}}
 				<div class="col-3">
 					<span class="footer_title">{{title}}</span>
@@ -49,5 +44,4 @@
 			</footer>
 		</div>
 	</div>
-
 </div>
