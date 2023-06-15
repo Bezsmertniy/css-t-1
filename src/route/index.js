@@ -208,7 +208,7 @@ router.get('/template-2', function (req, res) {
       {
         date: 'Oct 24',
         title: 'Latest post',
-        text: 'This is a wider card with supporting text below as a natural lead-in to additional content',
+        text: 'This is a wider card with supporting text below as a natural lead-in to additional content This is a wider card with supporting text below as a natural lead-in to additional content',
         category: [
           {
             id: 1,
@@ -239,6 +239,17 @@ router.get('/template-2', function (req, res) {
           {
             id: 3,
             text: 'Hot',
+          },
+        ],
+      },
+      {
+        date: 'Oct 30',
+        title: 'Trending topic',
+        text: 'This is a wider card with supporting text below as a natural lead-in to additional content',
+        category: [
+          {
+            id: 4,
+            text: 'Fashion',
           },
         ],
       },
@@ -414,7 +425,6 @@ router.get('/template-2', function (req, res) {
 })
 
 // ================================================================
-
 
 // Підключаємо роутер до бек-енду
 module.exports = router
