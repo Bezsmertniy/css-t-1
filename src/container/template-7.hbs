@@ -1,36 +1,30 @@
-<header class="header">
-	{{#with header}}
-	<div class="d_flex">
-		<div class="brandName">
-			<span class="icon-brandName">{{brandName}}</span>
-		</div>
-		<nav class="header_nav">
-			<div class="header_nav_right">
-				{{#each links}}
-				<a href="{{url}}" class="nav_link">{{text}}</a>
-				{{/each}}
-			</div>
-		</nav>
-	</div>
+{{> headerDark }}
 
-	<div class="ad">
-		{{#with ad}}
-		<a class="ad_button" href="{{url}}">ad</a>
-		<p>{{text}}</p>
-		{{/with}}
-		<div class="userOnline">User online: {{userOnline}}</div>
-	</div>
+<main class="hero">
+	{{#with hero}}
+	<h1 class="title_hero">{{title}}</h1>
+	<p class="hero_desc">{{description}}</p>
+	<a href="{{button.url}}" class="button hero_button">{{button.text}}</a>
 	{{/with}}
-</header>
+</main>
 
+<div class="about">
+	{{#with about}}
+	<h3 class="about_heading">{{heading}}</h3>
+	<p class="about_info">{{info}}</p>
+	{{/with}}
+</div>
 
-
-
-{{!-- <footer class="footer" id="test">
-	{{#each footer}}
-	<div>
-		<span class="footer_title">{{title}}</span>
-		{{> nav list=links isVertical=true}}
+<div class="articles">
+	<div class="articles_title">
+		<h2 class="articles_text">Out Articles</h2>
+		<a href="#" class="button articles_but">View All</a>
 	</div>
-	{{/each}}
-</footer> --}}
+	<div class="articles_block">
+		{{#each articles}}
+		{{> articleCardDark}}
+		{{/each}}
+	</div>
+</div>
+
+{{> footerDark}}
