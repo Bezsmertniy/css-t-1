@@ -46,9 +46,14 @@
   }
 
   .icon_arrow {
-    height: 14px;
-    width: 24px;
+    height: var(--size-1);
+    width: var(--spacing-5);
     background-image: url('/svg/feature/arrow_right.svg');
+  }
+  .icon_arrow_b {
+    height: var(--size-1);
+    width: var(--spacing-5);
+    background-image: url('/svg/feature/icon_arrow_b.svg');
   }
   .page_section_light {
     background-color: var(--color-light);
@@ -194,7 +199,7 @@ body {
     width: 100%;
     margin-left: auto;
     margin-top: 60px;
-    margin-bottom: 5вчччччч0px;
+    margin-bottom: 50px;
     text-align: start;
   }
 
@@ -272,7 +277,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 24px;
+    gap: var(--spacing-5);
   }
   .card_customer_quote {
     color: var(--color-black);
@@ -290,6 +295,84 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+  }
+  .bottom_section {
+    display: grid;
+    padding: 106px 345px 78px 345px;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+  }
+  .content_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .content_container_title {
+    color: var(--color-black);
+    text-align: center;
+    font-size: var(--spacing-7);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    padding-bottom: var(--spacing-7);
+  }
+  .wrap_large {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    padding: 0px 1px 7px 0px;
+    align-items: flex-start;
+    gap: 75px;
+  }
+  .card_promo {
+    width: 285px;
+    height: 420px;
+    background: #fff;
+    box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.1);
+  }
+  .promo_image {
+    width: 285px;
+    height: 208px;
+    flex-shrink: 0;
+  }
+  .promo_title {
+    padding-left: var(--spacing-1);
+    color: #454245;
+    font-size: var(--size-1);
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 700;
+    line-height: var(--size-2);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .promo_description {
+    padding-left: var(--spacing-1);
+    color: var(--color-black);
+    font-size: var(--spacing-5);
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+  }
+  .promo_info {
+    padding-left: var(--spacing-1);
+    padding-right: var(--spacing-1);
+    display: flex;
+    text-align: start;
+    justify-content: space-between;
+    margin-top: 10%;
+  }
+  .promo_info_text {
+    color: #1264a3;
+    font-size: var(--size-1);
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 700;
+    line-height: var(--spacing-3);
+    text-transform: uppercase;
   }
 }
 
