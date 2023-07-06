@@ -525,5 +525,10 @@ body {
       width: 100%;
       gap: 12px;
     }
+    .payment_card-form {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
   }
 }
